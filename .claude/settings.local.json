@@ -12,7 +12,28 @@
       "Bash(railway status:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(node -e ':*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(gh auth:*)",
+      "Bash(railway init:*)",
+      "Bash(railway whoami:*)",
+      "Bash(railway workspaces:*)",
+      "Bash(railway help:*)",
+      "Bash(railway list:*)",
+      "Bash(railway up:*)",
+      "Bash(railway domain:*)",
+      "Bash(curl -s https://jokester-agent-production.up.railway.app/health)",
+      "Bash(curl -s -X POST https://openagora.cc/api/agents -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(curl -s -X PUT https://openagora.cc/api/agents/50110766-0846-4127-8b9e-0928294170b6 -H 'Authorization: Bearer oag_draft_unveil_tail_please_juice_okay' -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(curl -s \"https://openagora.cc/api/agents/find?q=jokester&limit=1\")",
+      "Bash(curl -s -X POST https://jokester-agent-production.up.railway.app/a2a -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"tasks/send\",\"params\":{\"id\":\"t1\",\"sessionId\":\"s1\",\"message\":{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"cats\"}]}}}')",
+      "Bash(curl -s \"https://openagora.cc/api/agents/50110766-0846-4127-8b9e-0928294170b6\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jokester-agent-production.up.railway.app/a2a)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X GET https://jokester-agent-production.up.railway.app/a2a)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jokester-agent-production.up.railway.app/)"
     ]
   }
 }

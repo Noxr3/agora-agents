@@ -10,6 +10,16 @@ app.get("/health", (_req, res) => {
   res.json({ status: "ok", agent: "jokester" });
 });
 
+// A2A health check (GET)
+app.get("/a2a", (_req, res) => {
+  res.json({ status: "ok", agent: "jokester", version: "1.0.0" });
+});
+
+// Root health check
+app.get("/", (_req, res) => {
+  res.json({ status: "ok", agent: "jokester" });
+});
+
 // A2A endpoint
 app.post("/a2a", async (req, res) => {
   const body = req.body;
