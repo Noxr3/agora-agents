@@ -33,7 +33,12 @@
       "Bash(curl -s \"https://openagora.cc/api/agents/50110766-0846-4127-8b9e-0928294170b6\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jokester-agent-production.up.railway.app/a2a)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X GET https://jokester-agent-production.up.railway.app/a2a)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jokester-agent-production.up.railway.app/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jokester-agent-production.up.railway.app/)",
+      "Bash(railway service:*)",
+      "Bash(curl -s -w '\\\\nHTTP_CODE: %{http_code}\\\\n' -X POST https://openagora.cc/relay/jokester -H 'Authorization: Bearer oag_draft_unveil_tail_please_juice_okay' -H 'Content-Type: application/json' -d '{:*)",
+      "Bash(curl -s -w '\\\\nHTTP: %{http_code}\\\\n' -X POST http://localhost:3001/a2a -H 'Content-Type: application/json' -d '{\"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"tasks/send\",\"params\":{\"id\":\"t1\",\"sessionId\":\"s1\",\"message\":{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"cats\"}]}}}')",
+      "Bash(curl -s -w '\\\\nHTTP: %{http_code}\\\\n' -X POST http://localhost:3001/a2a -H 'Content-Type: application/json' -H 'PAYMENT-RESPONSE: tx-hash-abc123' -d '{\"jsonrpc\":\"2.0\",\"id\":\"2\",\"method\":\"tasks/send\",\"params\":{\"id\":\"t2\",\"sessionId\":\"s2\",\"message\":{\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"dogs\"}]}}}')",
+      "Bash(kill %1)"
     ]
   }
 }
